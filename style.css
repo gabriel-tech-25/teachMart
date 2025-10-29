@@ -132,12 +132,8 @@ li input {
 
     ul {
         border-bottom: 1px solid var(--borde);
-    }
-
-    ul {
         flex-direction: row;
         align-items: center;
-        gap: 5rem;
     }
 
     .static {
@@ -147,6 +143,11 @@ li input {
     .open-sidebar-button,
     .close-sidebar-button {
         display: none;
+    }
+    li:hover{
+        background-color: transparent;
+        text-align: initial;
+        width: auto;
     }
 
 }
