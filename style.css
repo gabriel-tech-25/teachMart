@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 
 li {
@@ -226,5 +226,61 @@ li input {
     .hero-b {
         min-width: 15%;
         text-align: center;
+    }
+}
+
+/* productos */
+.productos{
+    text-align: center;
+}
+
+.productos h2{
+    margin: 2rem 0;
+}
+.producto{
+    width: 40rem;        /* igual al tamaño de la imagen */
+    height: 45rem;       /* del alto del card completo */
+
+}
+.producto-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+.producto{
+    padding: .5rem;
+}
+.producto-img{
+    border-radius: 1rem;
+    width: 100%;
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+}
+.producto-title{
+   margin: 0;
+}
+.producto-p{
+    margin: 0;
+    font-size: 1.8rem;
+    color: #666;
+}
+
+@media (min-width: 768px){
+    .productos h2{
+       margin-right: 110rem;
+    }
+    .producto{
+        padding: 0;
+    }
+    .producto-contenedor{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .producto-p{
+        margin: 1rem;
     }
 }
